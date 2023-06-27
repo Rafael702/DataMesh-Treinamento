@@ -1,0 +1,18 @@
+Construção, Manutenção e versionamento de infraestrutura de forma eficiente e
+segura.
+
+Terraform
+Terraform Cloud
+Terraform Team & Governance (Pago)
+Terraform Bussiness (Pago)
+Terraform Enteprise
+
+3 fases:
+1 - Criação de arquivo do projeto
+2 - Planejamento
+3 - Aceitação
+
+Estrutura em HCL
+
+terraform fmt - formata o arquivo
+terraform validate - valida codigo
