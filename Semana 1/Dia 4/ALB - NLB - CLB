@@ -1,0 +1,176 @@
+O que é o Elastic Load Balancer?
+
+O Elastic Load Balancer (ELB) é um serviço da AWS que permite distribuir carga
+entre recursos da AWS, ou seja, entre instâncias do EC2. O ELB é um serviço
+gerenciado pela AWS e, portanto, altamente disponível.
+
+Você pode ter balanceadores de carga públicos, que são públicos para a
+Internet, e balanceadores de carga privados, que são privados para uma rede
+específica da AWS.
+
+protocolos de rede
+Os computadores se comunicam em camadas de rede usando protocolos. Uma parte
+significativa da escolha do melhor balanceador de carga é entender em qual
+camada de rede os balanceadores de carga atuam, juntamente com cada protocolo
+relacionado.
+
+Camada de rede
+Na camada de rede, temos o Protocolo de Internet (IP), por onde os bytes são
+transferidos; é menos confiável do que outras camadas, pois os dados podem ser
+perdidos.
+
+Camada de transporte
+A camada de transporte contém o Protocolo de Controle de Transmissão (TCP),
+onde a confiabilidade dos dados é mais significativa do que o desempenho.
+O Transport Layer Security (TLS) é mais seguro que o TCP devido à criptografia
+de dados. Enquanto isso, o User Datagram Protocol (UDP), onde o desempenho
+é maior que a confiabilidade, é uma alternativa ao TCP que os aplicativos de
+streaming de vídeo usam.
+
+Camada de aplicação
+A camada de aplicativo inclui HTTP e HTTPS, onde aplicativos da web, APIs de
+descanso, servidores de e-mail e filtros de arquivos se comunicam entre si.
+Esses aplicativos implementam TCP/TLS na camada de rede para confiabilidade de
+dados ao usar as camadas abaixo dela.
+
+Alguns aplicativos que precisam de alto desempenho, como aplicativos de jogos e
+streaming de vídeo ao vivo, se comunicam diretamente na camada de transporte
+via UDP, sacrificando a confiabilidade dos dados pelo desempenho.
+
+Ouvintes do Elastic Load Balancer
+
+Os ouvintes monitoram as solicitações de conexão do cliente. Cada um tem um
+protocolo, uma porta e um conjunto de regras para saber como encaminhar as
+solicitações aos destinos.
+
+Cada ouvinte deve ter uma regra de entrada para seu grupo de segurança,
+mapeando sua porta e origem.
+
+Duração de início lento
+Quando um novo destino é adicionado ao grupo de destino, essa configuração dá
+a ele tempo para aquecer antes de estar pronto para receber solicitações.
+
+Algoritmo do balanceador de carga
+Aqui podemos definir como a carga é balanceada entre os alvos.
+Na configuração Round Robin, o LB balanceará sequencialmente a carga entre os
+alvos.
+Na configuração Least Outstanding Requests, o LB balanceará a carga para o
+destino com o menor número de solicitações pendentes.
+
+Pegajoso
+Esta é a configuração que você procurará quando quiser manter uma sessão de
+usuário. Ou seja, você deseja que uma solicitação de um usuário específico seja
+sempre balanceada para uma instância específica. Stickiness usa cookies e é
+suportado por CLB e ALB.
+
+Vários grupos-alvo
+Você pode usar vários grupos de destino para seus aplicativos e microsserviços,
+dependendo da sua necessidade, e usar um balanceador de carga para todos eles.
+Dessa forma, você pode equilibrar a carga entre os grupos, cada um com vários
+destinos ou instâncias. No entanto, você não pode oferecer suporte a vários
+grupos-alvo com CLB.
+
+Escala automática
+
+O Auto Scaling ajuda você a aumentar e diminuir com base na carga.
+
+Aumentar a escala diminui o número de alvos.
+A expansão aumenta o número de destinos
+
+Balanceador de carga clássico (CLB)
+O CLB opera na Camada 4 e na Camada 7. Atualmente, a AWS não recomenda o CLB,
+pois decidiu que criar um balanceador de carga que atue em mais de uma camada
+simultaneamente não é o ideal.
+
+O CLB faz parte do que a AWS chama de “geração anterior”. Ao criar um, eles
+apontam que ele foi obsoleto.
+
+Balanceador de carga de aplicativos (ALB)
+
+O ALB opera na Camada 7. É o balanceador de carga mais usado na AWS e oferece
+suporte a WebSockets, HTTP e HTTPS; ele também pode escalar automaticamente com
+base na demanda usando o Auto Scaling.
+
+O ALB pode equilibrar a carga entre:
+
+instâncias EC2
+Aplicativos em contêineres (ECS)
+Aplicativos da Web usando seu endereço IP
+Lambdas, ou seja, serverless (esporadicamente)
+
+Um uso comum do ALB é na arquitetura de microsserviços, onde você deve distribuir o tráfego entre diferentes aplicativos com base em diferentes regras.
+
+Para criar um ALB, você deve obter um tipo de endereço IP e definir seu
+protocolo LB, ou seja, se ele usará HTTP ou HTTPS. Você também terá que definir
+a nuvem privada virtual (VPC) em que seu balanceador de carga estará, além da
+zona de disponibilidade de uma determinada região da AWS (por padrão, há suporte
+para balanceamento de carga entre zonas).
+
+É uma boa prática criar um security group para cada LB; isso dá a você o
+controle do que entra e sai de um determinado LB.
+
+As fontes listadas indicarão onde você deseja permitir o tráfego. Por padrão, o
+ALB é definido como 0.0.0.0/0, ::/0, o que significa que o tráfego será
+permitido de qualquer lugar.
+
+Você só pode vincular um LB a cada grupo de destino, com cada balanceador de
+carga roteando solicitações para destinos em um determinado grupo de destino.
+O tipo de destino será instâncias para EC2 e ECS, um endereço IP para
+aplicativos da Web e Lambdas para sem servidor.
+
+Lembre-se de também definir um tempo limite para que o ALB saiba a quantidade
+de tempo durante a qual nenhuma resposta indica uma falha na verificação de
+funcionamento. Além disso, o intervalo definido informará ao ALB com que
+frequência executar as verificações de funcionamento.
+
+Por fim, depois que um grupo de destino é criado, você deve registrar destinos
+(por exemplo, instâncias) para o grupo de destino fornecido.
+
+Balanceador de carga de rede (NLB)
+O NLB opera na Camada 4 (a camada de transporte). Faz parte da nova geração que
+oferece suporte a TCP/TLS e UDP e normalmente é recomendado para casos de uso
+de alto desempenho.
+
+O NLB pode equilibrar a carga entre:
+
+instâncias EC2
+Aplicativos em contêineres (ECS)
+Aplicativos da Web usando seu endereço IP
+O NLB não está no nível gratuito e não pode rotear para Lambdas.
+O NLB também não inclui um security group. Você pode atribuir um IP estático
+ou elástico e ele preserva o endereço IP de origem para aplicativos não HTTP.
+
+O ALB é um balanceador de carga que opera na camada de aplicativo (HTTP/HTTPS)
+e fornece recursos avançados de roteamento de tráfego. É uma boa opção para
+aplicativos modernos baseados em microsserviços que exigem recursos avançados
+de roteamento e dimensionamento.
+
+O NLB é um balanceador de carga projetado para lidar com cargas de trabalho de
+alta taxa de transferência e baixa latência. Ele opera no nível de conexão (TCP)
+e é otimizado para desempenho extremo, tornando-o uma boa escolha para cargas
+de trabalho de alto desempenho, como jogos, streaming de mídia e negociação
+de alta frequência.
+
+Então, qual balanceador de carga você deve escolher? Se você tiver um
+aplicativo moderno baseado em microsserviços que exija recursos avançados de
+roteamento e dimensionamento, o ALB pode ser uma boa opção. E se você tiver uma
+carga de trabalho de alto desempenho que exija desempenho extremo, o NLB pode
+ser a melhor escolha
+
+Os balanceadores de carga tratam de regras de ouvinte, grupos de destino e
+dimensionamento automático. Entender como eles funcionam ajudará você a ver
+como eles podem melhorar seus aplicativos. Aqui estão as principais diferenças 
+entre cada tipo de balanceador de carga:
+
+CLB
+Camada 4 e Camada 7
+Geração antiga, não recomendada pela AWS
+ALVA
+Camada 7
+Abordagens avançadas de roteamento
+NLB
+Camada 4
+Casos de uso de alto desempenho
+IP estático ou elástico
+É importante saber em qual camada de rede cada load balancer da AWS atua para
+escolher aquela que melhor se adapta a cada situação.

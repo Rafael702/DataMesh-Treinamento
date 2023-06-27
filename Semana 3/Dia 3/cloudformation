@@ -1,0 +1,9 @@
+CloudFormation é usado para automatizar
+Linguagem de infraestrutura para aws
+
+Recursos definidos por Json, oou Yaml.
+
+Cria recursos direto na cloud
+Stacks - Definição do recursos que contém um template que foi executado.
+Stacksets - Executa em todas as contas da AWS.
+AWS Organizate - Diversas contas na AWS

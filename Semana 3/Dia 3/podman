@@ -1,0 +1,16 @@
+Gerenciador de Containers - Lançado em 2019
+
+Permite transferir containers do linux para o windows sem problemas.
+
+Especificações  Open Containers Initiative (OCI)
+
+Agora que você já sabe o que é Podman, podemos compreender melhor por qual
+motivo escolher essa ferramenta. São eles, por exemplo:
+
+Custo-benefício: com o início da cobrança praticada no licenciamento para o uso
+do Docker Desktop no Windows, o Podman tem ganhado espaço e, por ser uma
+ferramenta já consolidada, seu uso acaba sendo uma opção viável;
+
+Funcionalidades: os comandos via CLI, Command Line Interface, são os mesmos do
+Docker, desta forma a curva de aprendizado para quem está trocando de ferramenta
+é muito pequena.

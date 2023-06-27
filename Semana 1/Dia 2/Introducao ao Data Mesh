@@ -1,0 +1,30 @@
+Os dados estão no centro da estratégia de todas as empresas.
+
+Data mesh desafia o fluxo da fonte de dados na analogia com a água.
+"Dados devem ser servidos e utilizaveis na fonte"
+
+Todo produto de sucesso esta no cruzamento entre ser utilizavel, valioso e
+viavel
+
+Don Norman pai da Engenharia cognitiva
+
+A proposta principal é dimensionar os dados por descentralização orientada
+por dominio.
+
+Com Data Mesh a responsabilidade pelos dados usados nas analises é transferida
+da equipe de dados central para as equipes de dominio, apoiada por uma equipe de
+plataforma de dados que fornece uma plataforma independente de dominio.
+
+Malha de dados x data lake
+Conforme declarado anteriormente, uma malha de dados é uma arquitetura de dados
+distribuídos, em que os dados são organizados por seu domínio para torná-los
+mais acessíveis aos usuários em uma organização. Um data lake é um ambiente de
+armazenamento de baixo custo, que normalmente abriga petabytes de dados
+estruturados, semiestruturados e não estruturados para análise de negócios,
+aprendizado de máquina e outros aplicativos amplos. Uma malha de dados é uma
+abordagem arquitetônica para dados, da qual um data lake pode fazer parte.
+No entanto, um data lake central geralmente é usado como depósito de dados,
+pois é frequentemente usado para ingerir dados que ainda não têm uma finalidade
+definida. Como resultado, ele pode ser vítima de um pântano de dados, ou seja,
+um data lake que carece da qualidade de dados apropriada e das práticas de
+governança de dados para fornecer aprendizados perspicazes.

@@ -1,0 +1,119 @@
+Serveless - Sem servidor
+
+Funçao Lambda - executa código em até 15 minutos
+
+API Gateway - Recebe conexões do site -
+
+O API Gateway é um gerenciador de tráfego que faz interface com o serviço de
+back-end real ou de dados e aplica políticas, autenticação e controle de acesso
+geral para chamadas de APIs de forma a proteger dados valiosos.
+O API Gateway é a maneira de controlar o acesso aos seus sistemas e serviços de
+back-end e foi projetado para otimizar a comunicação entre clientes externos e
+seus serviços de back-end, oferecendo aos seus clientes uma experiência
+perfeita. O API Gateway garante escalabilidade e alta disponibilidade de seus
+serviços. Ele é responsável por encaminhar a solicitação ao serviço apropriado
+e enviar uma resposta ao solicitante
+
+Um dos principais motivos pelos quais o API Gateway é usado é que ele é capaz
+de chamar vários serviços de backend e agregar os resultados. Em vez dos
+clientes precisarem enviar uma solicitação para cada serviço individual, eles
+podem enviá-las para o API Gateway, que então passa a solicitação para o
+serviço relevante. Além disso, o API Gateway fornece uma alternativa para um
+estilo de API de tamanho único. O API Gateway também pode expor uma API
+diferente para cada cliente. Hoje uma necessidade nos ambientes em constante
+evolução.
+
+Por que usar o API Gateway?
+Hoje em dia a maioria das APIs corporativas são implantadas usando gateways.
+Os API Gateways estão sendo mais usados devido ao aumento do uso de
+microsserviços.
+Os microsserviços permitem que um aplicativo seja dividido em vários serviços
+acoplados de maneira solta, porque cada microsserviço requer sua própria
+funcionalidade. Os microsserviços facilitam o desenvolvimento, a implantação e
+a manutenção das diferentes funções de um aplicativo, mas também podem
+dificultar o acesso dos clientes ao aplicativo de forma rápida e segura.
+O API Gateway é a solução para esse problema. Ao invés de fazer os clientes
+solicitarem acesso a cada microsserviço individualmente, o gateway é aquele
+único ponto de entrada para as solicitações, que as direciona ao serviço
+apropriado, reúne os resultados e os transmite de volta ao solicitante.
+O principal motivo para se usar um API Gateway, é o fato dessa função ser
+conhecida como roteamento pelos desenvolvedores. Por exemplo, os API Gateways
+ajudam sua empresa a gerenciar o tráfego gerado por chamadas de um aplicativo
+móvel como, por exemplo, o Uber e um aplicativo de back-end como o Google Maps.
+
+Autenticação
+Um API Gateway pode ser usado para autenticar chamadas de API. Dessa forma,
+mesmo que o cliente precise acessar dados de vários serviços, ele só precisará
+fazer a autenticação uma vez no gateway. Isso reduz a latência e garante que os
+processos de autenticação sejam consistentes em todo o aplicativo. Semelhante a
+como quando um passaporte é usado para verificar sua identidade ou um visto para
+provar que você tem permissão para trabalhar em um determinado país, o API
+Gateway fornece várias maneiras para os consumidores se autenticarem e obterem
+acesso aos seus recursos de API.
+
+Coleção de métricas
+Como todas as solicitações passam pelo API Gateway, ele é o local ideal para
+coletar análises de dados. Por exemplo, um API Gateway pode medir quantas
+solicitações um usuário está fazendo ou quantas solicitações estão sendo
+retransmitidas para cada microsserviço individual. O API Gateway também pode ser
+usado para limitar as solicitações. Se um usuário estiver enviando muitas
+solicitações, o gateway pode ser programado para rejeitá-las em vez de
+repassá-las a um dos microsserviços.
+
+Validação de entrada
+Na validação de entrada é o API Gateway que garante que todas as solicitações do
+cliente contenham as informações necessárias para concluir uma solicitação e que
+sejam fornecidas no formato correto. Se algo parecer errado, o gateway rejeitará
+a solicitação. Se todas as informações necessárias forem incluídas, o gateway
+encaminhará a solicitação para o microsserviço responsável por recuperar as
+informações solicitadas.
+
+Transformação de resposta
+A transformação de resposta é uma função importante dos API Gateways.
+Ele atua como o “tradutor” da informação. Por exemplo, se seu serviço de
+back-end deu uma resposta em XML, mas o solicitante precisa em JSON, o gateway
+cuidará disso automaticamente. Diferentes aplicativos e usuários geralmente
+precisam de acesso a diferentes informações. Os aplicativos móveis geralmente
+precisam de menos dados do que seus equivalentes da web para que o gateway possa
+fornecer as respostas corretas às solicitações, por exemplo. As solicitações de
+usuários internos provavelmente incluirão mais dados nas respostas.
+Alguns desses dados precisam ser protegidos com segurança antes de responder a
+uma solicitação semelhante de um usuário externo que é o trabalho do gateway.
+
+Tipos de API
+Rest - Representational State Transfer
+SOA APIS (Simple Object Access Protocol) - Usa XML
+
+API Gateway - Serviço da aws totalment gerenciado que torna mais fácil para os
+desenvolvedores publicar, manter, monitorar e proteger APIS em qualquer escala.
+Expoe endpoints HTTPs para definir uma API Restful
+Conecta a serviços  Serveless  como Lambda e DynamoDB
+Envia cada endpoint API para um alvo (target) diferente
+Roda de forma eficiente com baixo custo
+Escala sem esforço
+Monitora e controla o uso apenas por chaves API
+
+Configuração
+Definir uma API (container)
+Definir recursos (caminhos URL)
+Para cada recurso:
+- Seleciona o metodo HTTP suportado(GET, POST, DELETE, etc)
+- Configura Segurança
+- Escolher o alvo (targer) como EC2, Lambda, DynamoDB, etc
+- Configurar as transformações de request & response
+Deploy API para Stage
+- Usa API Gateway domain como padrão
+- É possivel usar custom domain
+- Agora suporta AWS Certificate Manager
+
+API Caching no Amazon API Gateway para armazenar em cache a resposta do endpoint.
+Com o cache podemos reduzir o numero da chamada feita ao endpoint e também
+melhorar a latência das solicitações para API.
+
+Same Origin Policy
+Na computação, a politica de mesma origem - same origin policy - é um conceito
+importante no modelo de segurança de aplicativos web.
+De acordo com a politica, um navegador da web permite que os scripts contidos em
+uma primeira página da web acessem dados em uma segunda página da web, mas apenas
+se ambas as páginas da web tiverem a mesma origem - Same Origin Policy
+Isso é feito para evitar ataques de Cross-Site Scripting (XSS)

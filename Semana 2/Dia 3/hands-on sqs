@@ -1,0 +1,7 @@
+SQS
+URL: https://sqs.us-east-1.amazonaws.com/797844572213/demo-queue
+
+ARN: arn:aws:sqs:us-east-1:797844572213:demo-queue
+
+Criando DynamoDb:
+{"userId":"123", "name": "lovercode", "age": "22"}

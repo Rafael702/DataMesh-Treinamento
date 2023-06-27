@@ -1,0 +1,38 @@
+BigData
+
+Dados são transformados em Informações.
+Inteligencia artificial se baseiam em dados. Inteligencia artificial é a base da Machine Learning.
+
+1.000 Megabytes = 1GB
+1.000 Gigabytes = 1TB
+1.000 Terabytes = 1PB
+1.000 Petabytes = 1EB
+1.000 Exabytes  = 1ZB
+1 Zettabytes
+
+5Vs que o BigData deve ter:
+1V = Volume -> Por conta da quantidade de dados armazenados
+2V = Variedades -> Por conta dos tipos de dados que devem ser comportados.
+3V = Velocidade -> Tempo de Processamento dos dados e o retorno das informações procuradas
+4V = Veracidade -> A informação que foi retornada deve ser verdadeira.
+5V = Valor -> As informações extraidas dos dados devem ter valor (importancia)
+
+Banco de dados Relacional -> Não atendem aos BigDatas, pois eles não possuem dados estruturados. Os dados são de todo o tipo e qualquer dado. É complexo e trabalhoso para se manter
+
+Banco de dados No SQL -> Não é apenas um Banco de dados, pois ele possue diversos tipos de  tecnologias por detrás dele.
+Tipos de Bancos No SQL: 
+MemCacheD, Riak, Redis -> São do tipo: chave valor.
+Property Graph, RDF -> São do Tipo Grafico.
+Cassandra,Hbase -> São do tipo Colunar.
+Amazon Elasticsearch Service -> Para o tipo pesquisa
+MongoDb, CounchDb  -> Tipo Documento
+
+Temos que ter boas ferramentas para guardar os dados, mas também temos que ter boas ferramentas para extrair os dados.
+data analytics data mining
+
+Pra quem trabalha com dados existem linguagens mais utilizadas como>
+R, Scala, Java(Apache Hadoop), C#, SASS,Julia e Python(destaque)
+
+Frameworks: Apache Spark, (Pra Python) Apache PySpark, Apache Hadoop (Usa o Paradigma MapReduce),Apache Storm, Apache Samza e Apache Flink
+
+ 

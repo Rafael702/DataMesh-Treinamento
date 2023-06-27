@@ -1,0 +1,109 @@
+O que é uma arquitetura de dados?
+
+Uma arquitetura de dados descreve como os dados são gerenciados - desde a
+coleta até a transformação, distribuição e consumo. Ele define o projeto de
+dados e a maneira como eles fluem pelos sistemas de armazenamento de dados.
+É fundamental para operações de processamento de dados e aplicativos de
+inteligência artificial (IA).
+
+Uma arquitetura de dados demonstra uma perspectiva de alto nível de
+como diferentes sistemas de gerenciamento de dados funcionam juntos. Estes
+incluem vários repositórios de armazenamento de dados diferentes, como
+data lakes, data warehouses, data marts, bancos de dados, etc.
+Juntos, eles podem criar arquiteturas de dados, como data fabrics e data meshes,
+cuja popularidade está crescendo cada vez mais. Essas arquiteturas colocam mais
+foco nos dados como produtos, criando mais padronização em torno dos metadados
+e mais democratização dos dados nas organizações por meio de APIs.
+
+Data warehouse / Data Lake / Data Lakehouse/
+
+Data warehouse -> Repositorio de dados unificados para armazenar grandes
+quantidades de informações de várias fontes dentro de uma organização;
+*Grandes quantidades
+*Varias Fontes
+
+Unica fonte de verdades de dados.
+Serve como componente central de relatórios e Analises de Negocios (BI)
+
+Os dados são armazenados de forma estruturada e relacional com dados históricos.
+
+Capacidade de fornecer rapidamente insights de toda a organização
+
+Extração
+Transformação
+Limpeza
+Filtragem
+Carregamento
+De forma estruturada já predefinida
+
+ETL - Extract Transform and Load -> Extração, Transformação e Carregamento
+
+Beneficios:
+Melhora a padronização , qualidade e consistencia dos dados
+Fornece inteligência de negocios aprimorada
+Aumentar o poder e a velocidade das cargas de trabalho de análise de dados e
+inteligência de negocios (BI)
+Melhora o processo geral de tomada de decisão.
+
+Desvantagem:
+Falta de flexibilidade de dados
+Altos custos de implementação e manutenção
+
+Data Lakes - Armazenamento de dados centralizados. - Os dados podem ser
+estruturados ou não.
+Armazenamento usando uma arquitetura plana.
+ELT - Extract Load and Transform
+
+Beneficios:
+Consolidação de dados - Dados estruturados e não estruturados
+flexibilidade de dados - Armazenar dados de qualquer formato
+Economia de custos - Mais barato que o Data warehouse
+Suporte para uma ampla variedade de casos de uso de ciencia de dados e
+machine learning
+
+Desvantagem:
+Desempenho insatisfatorio para casos de uso de BI e analise de dados.
+Falta de confiabilidade e segurança
+
+Data Lakehouse - Junção dos dois gerenciamentos de dados.  Economia e
+flexibilidade de um DataLake + Recursos de gerenciamento de dados, a confiabilidade
+e consistencia de um Data warehouse
+
+Complexo de construir do zero
+Dados não estruturados e não estruturados.
+
+Caracteristicas:
+Camada de armazenamento para armazenar dados em formatos abertos
+Camadas de computação
+Camadas de APIs
+Camadas de serviços
+
+A linguagem SQL é utilizada para a consulta e construção de bases de dados
+estruturadas que podem se relacionar com outras bases de dados também
+estruturadas. Exemplos de campos presentes em dados estruturados são: nomes,
+endereços, CEP, telefone etc
+
+Texto, atividades em redes sociais, e-mails, gravações de câmeras de segurança
+e músicas são exemplos típicos de dados não estruturados. A variedade e falta
+de estrutura pré-definida torna a sua análise mais difícil. Além disso, por
+serem não estruturados, esses dados são armazenados em bancos de dados não
+relacionais, chamados de NoSQL.
+
+Eles podem ser pensados como um tipo de dado estruturado que não se encaixa
+na estrutura de uma base de dados relacional, mas que ainda considera sistemas
+de nomeação de campos, permitindo a separação de diferentes elementos e
+tornando a pesquisa mais fácil
+
+O Data Lake pode ser visto como um repositório centralizado para armazenar
+dados estruturados e não estruturados.
+
+Ele pode armazenar dados não processados sem que haja a necessidade de nenhum
+tipo de transformação. Além disso, pode guardar qualquer tipo de formato,
+como imagens, textos, vídeos, modelos de machine learning e dados coletados
+em tempo real, implicando diretamente na sua capacidade de armazenamento.
+
+O processamento pode ser feito na exportação e, dessa forma, a organização
+dos dados é feita na leitura. Por mais que ele seja de rápida leitura,
+pode armazenar tantos dados variados que acaba gerando um pântano de dados se
+não forem implementadas técnicas para manter a qualidade e a governança
+dos dados.

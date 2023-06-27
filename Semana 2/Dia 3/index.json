@@ -1,0 +1,14 @@
+{
+    "Records": [
+      {
+        "messageId": "9ca1b294-48f0-4009-b346-ad64171cf05f",
+        "receiptHandle": "AQEBtaUFC3UcAl2x7Nk7bg9NHpmCWgeDIkrpUX7tOocpdQn0JxhnMps4hKWuxnBqD5Qqm+NWxe4KX2zOiUIP2NsEIrWrmVsTjIdZuMvxFrYRIe5Af4FFusgPQ1TDH8BC87VK84shQsI6IjCMvuL2O9f45++tcdJFvyOeLYNbFNEZeNHH8UxT1ohBKxgnAhRmarpSXtoU8MeKMzWHNyuEEDRKRTjU/Xer9Qb4TIuRwjEOc1dwTbCiMSGS2Ky0b4KoG7ETaruX3QmaeMqjFcmCWYIuphccyoqt2YSgGqCS3ThGJhwHmCrgLbe4LLRpZs9wscd52G68zy88usBt8v3dkgLmPmmq6/QU5GLlcFeS5XWY6mweyPD3c1mdEGeOLtLuIqWt",
+        "body": "{\"userId\": \"124\", \"name\": \"lovercode\", \"age\": \"33\"}",
+        "messageAttributes": {},
+        "md5OfBody": "1d1539deedfd99b89851d39efa754809",
+        "eventSource": "aws:sqs",
+        "eventSourceARN": "arn:aws:sqs:us-east-1:797844572213:demo-queue",
+        "awsRegion": "us-east-1"
+      }
+    ]
+  }

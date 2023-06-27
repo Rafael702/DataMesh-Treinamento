@@ -1,0 +1,109 @@
+Função como Serviço (FaaS)
+Permite que os desenvolvedores executem códigos que reajam a eventos sem a
+complexidade de construir e manter uma infraestrutura propriamente dita.
+
+Apesar do nome em inglês ("Sem servidor"), a tecnologia realmente precisa de
+servidores para rodar os códigos escritos por programadores. Contudo, há uma
+explicação interessante para o termo.
+
+Isso porque ele se refere, principalmente, ao fato de que uma empresa ou um
+desenvolvedor individual não precisam comprar ou provisionar máquinas virtuais
+ou servidores para conseguir rodar o código daquela aplicação.
+
+Assim, apesar de o nome sugerir o contrário, o modelo conhecido como Serverless
+não exclui a utilização de servidores. Essa tecnologia é bastante similar à
+computação de ponta, já que fornece funcionalidades típicas de servidores para
+dispositivos locais.
+
+A principal função desse modelo de computação sem servidor é aliviar a carga
+dos desenvolvedores. Assim, eles liberam os profissionais da obrigação de ter
+que lidar com questões operacionais secundárias. Eles passam a se concentrar
+somente na inovação, gerando mais produtividade para as suas atividades.
+
+Semelhante a IaaS e PaaS, a redução de custos de infraestrutura e recursos
+humanos é a vantagem básica da arquitetura sem servidor, em que você paga por
+servidores gerenciados, bancos de dados e lógica de aplicativo.
+
+Assim, temos um serviço como o AWS Lambda da Amazon, fornecedor de infraestrutura
+de nuvem pública com uma oferta de computação sem servidor, que cobra apenas pelo
+tempo em que a função é chamada
+
+Agora, os serviços que alugavam servidores na AWS, que custavam milhares de
+dólares, foram reduzidos a menos de US$ 10. Visto que já é uma tendência, os
+principais provedores de Cloud, como o Google Cloud Platform, a IBM e a Oracle,
+também fornecem serviços de FaaS.
+
+Mas nem só de vantagens vive a TI. Assim como outras inovações, a operação sem
+servidores também tem suas desvantagens. Por exemplo, o controle de fornecedores
+e preocupações com segurança são alguns dos problemas causados pelo uso de APIs
+(Interface de Programação de Aplicativos) de terceiros.
+
+Outro ponto sensível é a dependência causada aos desenvolvedores em relação às
+ferramentas de depuração de sistemas que necessitam de acesso a uma quantidade
+significativa de métricas relevantes para identificar a causa raiz.
+
+Os sistemas IaaS (Infraestrutura como Serviço) e PaaS (Plataforma como serviço)
+têm exposto as técnicas de modelagem de tráfego e balanceamento de carga,
+via serviços de GeoDNS ou Zuul.
+
+A AWS oferece tecnologias para executar código, gerenciar dados e integrar
+aplicações, tudo isso sem a necessidade de gerenciar servidores. As tecnologias
+sem servidores contam com escalabilidade automática, alta disponibilidade
+integrada e um modelo de faturamento pago por utilização para aumentar a
+agilidade e otimizar os custos. Estas tecnologias também eliminam as tarefas
+de gerenciamento de infraestrutura, como provisionamento de capacidade e
+patching, para que você possa se concentrar apenas em escrever códigos que
+atendam a seus clientes. As tecnologias de aplicações sem servidores começam
+com o AWS Lambda, um evento de serviço computacional orientado nativamente
+integrado com mais de 200 serviços da AWS e aplicações de software como serviço
+(SaaS).
+
+O termo arquitetura sem servidor é um pouco impróprio porque implica que não há
+servidores em nenhum lugar do ecossistema. No entanto, os aplicativos executados
+em uma estrutura de computação sem servidor ainda são hospedados em servidores,
+mas sua empresa não é responsável por supervisionar esses servidores de forma
+alguma.
+O provedor de seu serviço de nuvem gerencia diretamente a arquitetura sem
+servidor e cuida de todas as necessidades de infraestrutura relacionadas, o que
+ajuda você a acelerar processos, obter escalabilidade com mais facilidade e
+controlar custos.
+
+Function-as-a-service (FaaS) e back-end-as-a-service (BaaS) são os dois
+principais tipos de arquitetura sem servidor.
+
+Ao contrário dos aplicativos desenvolvidos em produtos de plataforma como serviço
+(PaaS), os aplicativos FaaS não exigem que processos de servidor tradicionais
+sejam executados em segundo plano quando os aplicativos não estão sendo usados.
+
+Todos os principais provedores de nuvem pública têm ferramentas FaaS em seus
+catálogos: a Amazon foi a primeira a comercializar com o AWS Lambda, e a
+Microsoft e o Google seguiram logo depois com o Azure Functions e o Google Cloud
+Functions, respectivamente. FaaS tornou-se um tópico importante atualmente
+porque fornece uma maneira fácil de implementar uma arquitetura de
+microsserviços.
+
+Os desenvolvedores que têm pouco tempo e podem se concentrar apenas no
+desenvolvimento de funções de front-end podem apreciar o BaaS, enquanto aqueles
+que procuram criar do zero o acharão limitado. Além disso, embora vários
+provedores de serviços implementem BaaS em uma arquitetura sem servidor,
+nem todas as implementações de BaaS são realmente sem servidor. Muitos requerem
+locais de recursos fixos ou funcionam em tempo integral em vez de sob demanda.
+
+4 principais vantagens da computação sem servidor
+Quando implantada corretamente, a computação em nuvem sem servidor pode ajudar
+as empresas a obter uma série de benefícios significativos. Alguns dos mais
+notáveis ​​incluem:
+1. Sem manutenção de infraestrutura
+2. Escalabilidade infinita
+3. Controle de custos
+4. Maior produtividade
+
+4 possíveis desafios da computação sem servidor
+Como é o caso da maioria das tecnologias, as arquiteturas sem servidor têm
+alguns obstáculos a serem superados, embora nenhum deles deva ser considerado um
+obstáculo. A seguir estão os desafios mais comuns de uma plataforma sem
+servidor:
+1. Partidas a frio e latência
+2. Segurança
+3. Perda de controle
+4. Bloqueio do fornecedor

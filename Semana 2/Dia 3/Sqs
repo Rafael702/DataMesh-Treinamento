@@ -1,0 +1,46 @@
+Quando usar o serviço de fila da aws?
+Respostas assincronas
+Util em processamentos, respostas que não precisam ser imediatas
+
+Simple Queue Service - Gerenciado pela aws
+
+Alta disponibilidade em diversas areas e zonas de disponibilidade.
+Baixo custo
+Nativamente vem varias métricas
+Dead Letter Queue - DLQ
+Escopo = regional
+Para um escopo global é necessario usar um SNS
+
+Arquitetura de Aplicações
+
+Padrão Fifo - First in First out
+
+Soft e hard limite
+
+trigger - chamar alguma coisa > um gatilho
+
+Broadcast - as mensagens são enviadas para todos que estão no grupo > uma mesma
+mensagem é enviada para todos do grupo.
+
+Fila de mensagem (message queue) -> apenas uma mensagem é enviada para um
+consumidor ñ há o envio de uma mesma mensagem para todos os consumidores do grupo
+igual ao Broadcast
+
+O SQS suporta criptografia do lado do servidor. Assim podemos trafegar dados
+sensiveis através do sqs de forma criptografada.
+Dois tipos de filas: Fila padrão e Fifo
+SQS Standard Queue - As mensagens são disponibilizadas assim que elas estão
+disponiveis para quem está ouvindo. Possui a garantia de que cada mensagem será
+entregue.
+Fifo - Primeiro que entra é o primeiro que sai. Podemos fazer agrupamentos de
+mensagens - dentro de uma unica fila podemos criar grupos de mensagens diferentes
+e fazer com que cada algoritmo ou o consumidor filtre o grupo para determinada
+tarefa que está delegada para ele. Junto com o agrupamento de mensagens podemos
+aplicar uma regra de deduplicação de mensagem para garantir que não exista
+duplicações de mensagens;
+Por exemplo: Cliente clica duas vezes no botão pagar, será gerado duas mensagens
+para procesar o pagamento, podemos ter problema com isso. A Deduplicação evita
+isto.
+
+Um "worker" é um objeto criado através da utilização do construtor
+(ex Worker() (en-US)) que executa um dado arquivo Javascript

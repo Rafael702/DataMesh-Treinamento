@@ -1,0 +1,77 @@
+O que é container?
+Um container nada mais é do que um software usado para empacotar e isolar
+virtualmente aplicativos para permitir maior escalabilidade, disponibilidade e
+portabilidade em diversos ambientes de computação, incluindo sistemas
+bare-metal/machine, em nuvem, máquinas virtuais (VMs) e alguns sistemas
+operacionais da Linux, Windows e macOS.
+
+Entenda mais sobre sistema bare metal/machine
+O termo bare metal é uma referência ao disco rígido de um computador – o meio
+no qual o sistema operacional (SO) está instalado. Um ambiente bare-metal é um
+tipo específico de ambiente de virtualização criado com hipervisores bare-metal
+que não dependem de um sistema operacional host para funcionar.
+
+Em um ambiente bare-metal, o hipervisor de virtualização é instalado e
+executado diretamente no disco rígido (bare metal) e pode criar máquinas
+virtuais (VMs) a partir dele, assim como em um ambiente virtualizado com um
+sistema operacional host.
+
+Listas são containers sequenciais que armazenam dados em ordem. Quando os dados
+são inseridos na lista, eles são armazenados na ordem em que são adicionados.
+Pilhas e filas são outras estruturas de dados sequenciais que armazenam dados
+em ordem. A diferença entre as duas estruturas é que, em uma pilha, os elementos
+são acessados através da última posição, enquanto na fila, os elementos são
+acessados pela primeira posição.
+Árvores são estruturas de dados não sequenciais que armazenam dados como nós e
+arestas. Cada nó armazena um dado e os nós são conectados por arestas.
+Grafos são estruturas semelhantes a árvores, mas eles podem conter ciclos.
+Tabelas hash são estruturas de dados que usam funções de hash para mapear os
+dados para posições específicas na tabela. As tabelas hash permitem operações de
+pesquisa e inserção mais rápidas do que outras estruturas de dados.
+
+Ao contrário de uma máquina virtual, que inclui um sistema de tempo de execução
+e uma máquina operacional convidada para seu aplicativo, um container inclui
+apenas um sistema de tempo de execução e, em vez disso, depende do sistema
+operacional do host. Isso reduz a memória, a CPU e o armazenamento exigidos pelo
+contêiner, possibilitando o suporte a muitos outros contêineres na mesma
+infraestrutura.
+
+Ainda, outra distinção é que embora uma máquina virtual possa ter vários
+gigabytes de tamanho, um contêiner pode ter apenas algumas dezenas de megabytes.
+
+Tem mais! Sem a necessidade de inicializar seu próprio sistema operacional, um
+aplicativo em contêiner pode ser iniciado quase instantaneamente — muito mais
+rápido que uma máquina virtual — e desaparecer com a mesma rapidez quando não
+for mais necessário para liberar recursos do host.
+
+ECS - Serviço de Orquestração de Containers
+AWS Fargate - Cluster rodando sem se importar onde ele está. Paga pelo que usa do
+Fargate.
+Serviço gerenciado pela aws
+
+Integra com muitos serviços como>
+EC2 - Criar servidores
+IAM - Serviços de IAM para dar autoridade para os containers
+SM - Secret Manager - Acesso aos segredos que podem ser guardados
+CW - Cloud Watch - Entrega de métricas
+ELB - Elastic Load Balance - Containers respondendo pelo ELB
+
+Task Definition - Onde colocamos configurações da porta, auto-scaling, determinar
+se vai precisar de um LB, definir portas. Contém todas as informações.
+Integra nativamente com serviços de devops da AWS.
+
+Code Build integra com o ECS. Faz o Role Deploy
+
+ECR - Elastic Container Registry - Registro de Container
+AppRunner
+AwsCloudMap
+AwsAppMash - Padronização e Migração entre Microseriços
+
+ECS - Serviço Nativo da AWS; Não possui custo de gerenciamento. Paga pelo uso de
+processamento de instancias; Facil de fazer deploy; Monitoração (Cloud Watch);
+Repositorios Privados - ECR (o mesmo que DockerHube so que mais barato);
+Suporte; Fargate - Diversos servidores gerenciados pela aws.
+Especificamos nele quanto de memoria, cpu, mapeamento de portas.
+O Fargate é mais caro.
+
+Cluster - Conjuntos de servidores interligados

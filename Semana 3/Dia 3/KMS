@@ -1,0 +1,47 @@
+criptografia do lado cliente, lado servidor ou do KMS.
+
+Todos os servços que permitem criptografia do lado servidor são integrados ao kms.
+
+Funcionamento da criptografia:
+chave simetrica gerada através de hardware ou software. A chave simetrica junto com
+o dado produz o dado criptografado e este dado que é salvo.
+Redução de chaves simetricas - Resolução > Customer master Key.
+Chave mestra criptografa a chave de dados e a chave de dados passa a ser armazenada
+junto com os dados.
+
+Sem a master key não é possivel abrir estes dados. Chave que abre as outras
+Mas onde que armeazenamos a chave key?
+Envelopment Cryption
+
+Podemos guardar esta chave no AWS Key Management Service e o CloudHSM.
+
+No KMS o usuario possui os seguintes beneficios:
+Controla a autenticação e autorização.
+A aws cuida da alta disponibilidade, durabilidade e escalabilidade.
+Integração completa com serviços gerenciados na nuvem da AWS.
+Diminui a latencia até as aplicações na AWS.
+
+Serviços de hardware (appliance) que não permite a extração de chaves a nenhum
+administrador da aws e são a prova de violação(tamper proof).
+Permite configurar a rotação anual das chaves.
+Suporta o uso da CloudHSM como repositorio se alguma regulamentação exige o uso
+de chaves armazenadas em HSM dedicado.
+Agora suporta também chaves assimétricas e assinatura digital.
+
+O AWS Key Management Service (KMS) oferece a você controle centralizado das
+chaves criptográficas usadas para proteger seus dados. O serviço é integrado a
+outros serviços da AWS, tornando mais fácil criptografar os dados armazenados
+nesses serviços e controlar o acesso às chaves que o descriptografam. O AWS KMS
+também é integrado ao AWS CloudTrail, que ajuda a auditar quem usou quais
+chaves, em quais recursos e quando. O AWS KMS ajuda os desenvolvedores a
+adicionarem mais facilmente funcionalidades de criptografia ou assinatura digital
+aos código de aplicações, diretamente ou usando o AWS SDK. O SDK de criptografia da
+AWS oferece suporte ao AWS KMS como provedor de chaves para desenvolvedores que
+precisam criptografar/descriptografar dados localmente dentro das aplicações.
+
+O AWS KMS é um serviço gerenciado. Conforme cresce o seu uso da criptografia, o
+serviço escala automaticamente para atender às suas necessidades.
+Ele ajuda você a gerenciar milhares de chaves KMS na sua conta e a usá-las
+sempre que quiser. Ele define limites padrão para o número de chaves e as taxas
+de solicitação. No entanto, se necessário, é possível solicitar um aumento dos
+limites.

@@ -1,0 +1,5 @@
+Serviço de DNS - Resolve nome IP
+Integra com outros serviços dentro da aws
+
+Configuração failover - redireciona usuarios  a um local alternativo  se o
+endpoint primario ficar indisponivel 

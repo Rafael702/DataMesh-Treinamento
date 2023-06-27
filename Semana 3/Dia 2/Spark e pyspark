@@ -1,0 +1,46 @@
+computação distribuida:
+serviço com ligação em varios computadores. Cluster. Dividir pra conquistar.
+
+RDD - Resilient Distributed Dataset
+
+Spark pega os dados que serão processados e coloca nas estruturas RDD's em
+memória e depois grava no disco. Spark possui um melhor processamento e velocidade.
+Ecossistema do Spark
+
+Spark core api suporta: Java, R, SQL, Python e Scala
+
+Jupiter colab
+
+#Instalar o Java
+!apt-get install openjdk-8-jdk-headless -qq > /dev/null
+
+#Baixar a versão mais recente do Spark
+!wget -q https://downloads.apache.org/spark/spark-3.4.0/spark-3.4.0.tgz
+
+#Extrair o spark
+!tar xf /content/spark-3.4.0.tgz
+
+#Criar as variaveis de ambiente
+import os
+os.environ["JAVA_HOME"]  = "/usr/lib/jvm/java-8-opendjdk-amd64"
+os.environ["SPARK_HOME"] = "/content/spark-3.4.0"
+
+#Instalar a lib findspark que ajuda a localizar o Spark no sistema e importá-lo como uma biblioteca regular.
+!pip install -q findspark
+
+#Importar a lib findspark
+import findspark
+findspark.init()
+
+
+spark session - entrypoint
+#criar spark session
+from pyspark.sql import SparkSession
+spark = SparkSession.builder\
+        .master('local')\
+        .appName('sparkcolab')\
+        .getOrCreate()
+
+
+\ -> concatena no spark
+master - nó, drivers ou o trabalho esta sendo feito em um cluster.

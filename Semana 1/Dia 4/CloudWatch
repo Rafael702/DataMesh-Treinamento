@@ -1,0 +1,22 @@
+Serviços de monitoração já vem nativamente na aws.
+
+CloudWatch gerencia tudo referente a métricas.
+Nativamente ele monitora os recursos
+Conseguimos acessos a metricas pelo CloudWatch a nivel de hardware.
+AWS não deixa isso por padrão. Por exemplo, a AWS consegue ver o quanto de memória
+a instancia tem, mas não sabe o quanto está usando.
+Customer Metricas - Podem ser modificadas na CloudWatch para visualizar o que
+acontece na instancia não só o hardware.
+Podemos configurar dashboard e customizar métricas.
+Podemos configurar alertas para sermos notificados em casos de ultrapassar
+determinada porcentagem. CloudWatch pode executar um Lambda.
+
+CloudTrail e Aws Config
+CloudTrail é um serviço global na aws onde podemos acompanhar todas as atividades
+que ocorreram em uma conta. Log de tudo.
+
+Aws Config - Apresenta tudo o que foi feito em determinado recurso. Faz checagem
+de segurança. Podemos configurar uma ação automatica para o que não está
+compliance
+
+compliance - Não segue a lei ou padrão especificado.

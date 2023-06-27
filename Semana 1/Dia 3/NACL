@@ -1,0 +1,10 @@
+NETWORK ACL
+
+Network ACLs são como firewal de borda da rede.
+O firewal fica normalmene na ponta da rede onde os servidores ficam debaixo
+dele.
+
+Toda regra de entrada e saida do NACL já vem bloqueada.
+Podemos associar subnets
+
+O Default do NACL vem com todas as portas liberadas.

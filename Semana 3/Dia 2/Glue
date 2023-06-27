@@ -1,0 +1,40 @@
+AWS Glue - integração de dados sem servidor
+Facilita descobrir preparar, mover e integrar os dados em qualquer escala.
+Todos os usuarios consegue criar pipelines de dados modernos de maneira
+eficiente e econômica para analises, desenvolvimento de aplicativos e aprendizado
+de máquina.
+Ele simplifica o acesso e moderniza a limpeza e transformação enquanto gerencia
+um catalogo de dados central.
+ETL - Extract, Transform e Load
+
+Paga apenas pelos recursos que os trabalhos usam durante a execução.
+
+AWS Glue é a ponte para criar uma pipelines de dados moderno.
+
+No processo da transformação o aws Glue gera scripts em Python
+
+Pelo AWS Glue podemos pegar um objeto de uma bucket e extrair os dados e mandar
+para o athena.
+
+Além disso, o AWS Glue facilita a integração de dados em sua arquitetura.
+Ele se integra aos serviços de análise da AWS e a data lakes do Amazon S3. O
+AWS Glue tem interfaces de integração e ferramentas de criação de trabalhos que
+são descomplicadas para todos os usuários, de desenvolvedores a usuários
+corporativos, com soluções personalizadas para conjuntos variados de habilidades
+técnicas.
+
+AWS Glue Studio
+
+O AWS Glue Studio é uma interface gráfica que facilita a criação, a execução e o
+monitoramento de trabalhos de integração de dados no AWS Glue. Você pode compor
+visualmente fluxos de trabalho de transformação de dados e executá-los
+perfeitamente no mecanismo de ETL com tecnologia sem servidor baseado no
+Apache Spark do AWS Glue. Para obter mais informações, consulte O que é o
+AWS Glue Studio.
+
+Execute e monitore trabalhos: execute trabalhos do AWS Glue e monitore-os com
+ferramentas de monitoramento automatizadas, a interface do usuário do
+Apache Spark, insights de execução de trabalhos do AWS Glue e o AWS CloudTrail
+
+Para catalogar os dados é necessário acessar a ferramenta do AWS Glue - Crowler
+Ele vai até o componente da arquitetura e vê o que tem lá.

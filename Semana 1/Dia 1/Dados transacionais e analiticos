@@ -1,0 +1,45 @@
+OLTP - Online Transaction Processing -> informações transacionais - SQL Server
+Ambiente de banco onde se insere e lê dados o tempo todo.
+
+OLAP - ONLINE ANALYTICAL Processing
+
+Data warehouse -> Ambiente separado do banco.
+
+O OLTP, do inglês "On-line Transaction Processing", é o termo usado para se
+referir aos sistemas transacionais, ou seja, os sistemas operacionais das
+organizações. São utilizados no processamento dos dados de rotina que são
+gerados diariamente através dos sistemas informacionais da empresa e dão
+suporte às funções de execução do negócio organizacional.
+
+Já o OLAP, do inglês "On-line Analytical Processing", trata da capacidade de
+analisar grandes volumes de informações nas mais diversas perspectivas dentro
+de um Data Warehouse (DW). O OLAP também faz referência às ferramentas
+analíticas utilizadas no BI para a visualização das informações gerenciais e
+dá suporte para as funções de análises do negócio organizacional.
+
+Em resumo podemos dizer que a grande diferença está no fato de que um está
+direcionado ao funcionamento dentro do ambiente operacional (OLTP) e o outro
+com foco essencialmente gerencial (OLAP)
+
+O processamento analítico on-line (OLAP) e o processamento de transações
+on-line (OLTP) são sistemas de processamento de dados que ajudam você a
+armazenar e analisar dados de negócios. As organizações coletam e armazenam
+dados de várias fontes, como sites, aplicativos, medidores inteligentes e
+sistemas internos. O OLAP combina e agrupa os dados para que você possa
+analisá-los de diferentes pontos de vista. Por outro lado, o OLTP armazena
+e atualiza dados transacionais de forma confiável e eficiente em grandes
+volumes. Os bancos de dados do OLTP podem ser uma das várias fontes de dados
+de um sistema OLAP
+
+Principais diferenças: OLAP versus OLTP
+O objetivo principal do processamento analítico on-line (OLAP) é analisar
+dados agregados, enquanto o objetivo principal do processamento de transações
+on-line (OLTP) é processar as transações do banco de dados.
+
+Você usa sistemas OLAP para gerar relatórios, realizar análises complexas de
+dados e identificar tendências. Por outro lado, você usa sistemas OLTP para
+processar pedidos, atualizar estoque e gerenciar contas de clientes.
+
+Outras diferenças importantes incluem formatação de dados, arquitetura
+de dados, performance e requisitos. Também discutiremos um exemplo de quando
+uma organização pode usar OLAP ou OLTP.

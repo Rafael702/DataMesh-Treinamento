@@ -1,0 +1,11 @@
+Elastic Load Balance
+Balanceador de carga
+
+Health Check - Verifica se o servidor está de pé antes de mandar a conexão.
+
+Tipos de ELB:
+ALB, NLB, CLB
+
+ALB -> Application Load Balancer
+NLB - Network Load Balancer - Performance muito maior que a ALB.
+CLB - Classic Load Balancer - Legado

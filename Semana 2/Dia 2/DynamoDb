@@ -1,0 +1,64 @@
+Por que você deve usar um banco de dados NoSQL?
+Os bancos de dados NoSQL são ideais para muitos aplicativos modernos, como
+dispositivos móveis, Web e jogos, que exigem bancos de dados flexíveis,
+escaláveis, de alta performance e altamente funcionais para proporcionar ótimas
+experiências aos usuários.
+
+Flexibilidade: os bancos de dados NoSQL geralmente fornecem esquemas flexíveis
+que permitem um desenvolvimento mais rápido e iterativo. O modelo de dados
+flexível torna os bancos de dados NoSQL ideais para dados semiestruturados e
+não estruturados.
+
+Escalabilidade: os bancos de dados NoSQL geralmente são projetados para serem
+escalados horizontalmente usando clusters distribuídos de hardware, em vez de
+escalá-los verticalmente adicionando servidores caros e robustos. Alguns
+provedores de nuvem lidam com essas operações nos bastidores como um serviço
+totalmente gerenciado.
+
+Alta performance: o banco de dados NoSQL é otimizado para modelos de dados
+específicos e padrões de acesso que permitem maior performance do que quando se
+tenta realizar uma funcionalidade semelhante com bancos de dados relacionais.
+
+Altamente funcional: os bancos de dados NoSQL fornecem APIs e tipos de dados
+altamente funcionais criados especificamente para cada um de seus respectivos
+modelos de dados.
+
+
+Bancos de dados relacionais fornecem propriedades de atomicidade, consistência,
+isolamento e durabilidade (ACID):
+
+A atomicidade exige uma transação para executar completamente ou não é executada
+de forma alguma.
+A consistência exige que, quando uma transação é confirmada, os dados devem
+estar em conformidade com o esquema do banco de dados.
+O isolamento exige que as transações simultâneas sejam executadas separadamente
+umas das outras.
+A resiliência exige a capacidade de se recuperar de uma falha do sistema ou
+falta de energia inesperada para o último estado conhecido.
+
+Os bancos de dados NoSQL geralmente fazem compensações relaxando algumas das
+propriedades ACID dos bancos de dados relacionais para um modelo de dados mais
+flexível que pode ser escalado horizontalmente. Isso torna os bancos de dados
+NoSQL uma excelente opção para casos de uso de baixa latência e alta taxa de
+transferência que precisam ser escalados horizontalmente além das limitações de
+uma única instância.
+
+
+O DynamoDB é extremamente perfomático principalmente para leitura.
+Para escrita é um pouco mais caro.
+O DynamoDB se paga conforme é usado. Isto é, por unidade de leitura e escrita.
+Gerenciado pela AWS -> Possui ferramentas de backup; possui painel dashboard de
+monitoração; alarmes baseados em performance, dashboard. Isso tudo é gerenciado
+pela aws e podemos verificar pela console web da aws
+Facil de ser criada.
+
+Baixa Latência, escalável
+HA3 DC'S -> Geração de tabela em localidades diferentes - Assim a inserção,
+atualização e etc, acontece em todas essas tabelas
+
+Foco principal do Dynamo é leitura
+
+Perfomance medida para unidade de leitura e escrita
+
+NOSQL e SQL
+No SQL temos tabelas. Se inserirmos alguma coluna ou dado a mais, podemos 

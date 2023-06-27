@@ -1,0 +1,19 @@
+Rede default - Teste
+
+VPC - Rede por região.
+Toda VPC possui subnets e toda subnet possui uma instancia
+
+Route Tables - Tabela de rotas
+Roteamento do trafico de acordo com a origem e destino.
+O NAT Gateway é necessário pra sair de dentro do servidor pra ir pra Internet.
+O NAT traduz rede privada em publica. Mas não traduz rede publica em rede
+privada.
+
+O IGW (Internet Gateway) apontamos para qual VPC ela pertence e colocamos ela no
+Route Table.
+
+Colocar aplicações em subnets diferentes para garantir a alta disponibilidade.
+
+Dificilmente é colocado um Banco de Dados em Rede publica
+
+Porta 80 ou 443 (porta da Internet) (http ou htpps)

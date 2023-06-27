@@ -1,0 +1,59 @@
+O Encaminhamento Entre Domínios Sem Classificação (CIDR) é um método de alocação
+de endereços IP que melhora a eficiência do encaminhamento de dados na Internet.
+Cada máquina, servidor e dispositivo de usuário final que se conecta à Internet
+tem um número exclusivo, chamado endereço IP, associado a ele.
+Os dispositivos encontram e se comunicam uns com os outros usando esses
+endereços IP. As organizações usam o CIDR para alocar endereços IP de forma
+flexível e eficiente em suas redes.
+
+Quais são os diferentes formatos de endereço IP?
+Um endereço IP tem duas partes:
+
+O endereço da rede é uma série de dígitos numéricos que apontam para o
+identificador exclusivo da rede
+O endereço do host é uma série de números que indicam o identificador do host
+ou do dispositivo individual na rede
+Até o início da década de 1990, os endereços IP eram alocados usando o sistema
+de endereçamento clássico. O comprimento total do endereço foi fixado e o número
+de bits alocados para as partes da rede e do host também foram fixados.
+
+Um endereço IPv4 consiste em 32 bits. Cada sequência de números separados pelo
+ponto consiste em 8 bits, representados por 0 a 255 em formas numéricas.
+As organizações poderiam comprar três classes de endereços IPv4.
+
+Classe A
+Um endereço IPv4 de classe A tem 8 bits de prefixo de rede. Por exemplo,
+considere 44.0.0.1, em que 44 é o endereço da rede e 0.0.1 é o endereço do host.
+
+Classe B
+Um endereço IPv4 de classe B tem 16 bits de prefixo de rede. Por exemplo,
+considere 128.16.0.2, em que 128.16 é o endereço da rede e 0.2 é o endereço
+do host.
+
+Classe C
+Um endereço IPv4 de classe C tem 24 bits de prefixo de rede. Por exemplo,
+considere 192.168.1.100, em que 192.168.1 é o endereço da rede e 100 é o
+endereço do host.
+
+O CIDR permite que os roteadores organizem endereços IP em várias sub-redes com
+mais eficiência. Uma sub-rede é uma rede menor existente dentro de outra.
+Por exemplo, todos os dispositivos conectados a um roteador estão na mesma
+sub-rede e têm o mesmo prefixo de endereço IP.
+
+Com o CIDR, sua organização pode criar e consolidar várias sub-redes.
+Isso permite que os dados cheguem ao endereço de destino sem percorrer caminhos
+desnecessários.
+
+A Autoridade de Atribuição de Números da Internet (IANA) atribui grandes blocos
+CIDR aos registros regionais da Internet (RIR). Em seguida, o RIR atribui
+blocos menores aos registros locais da Internet (LIR), que os atribuem às
+organizações.
+Enquanto isso, usuários particulares solicitam bloqueios do CIDR de seus
+provedores de serviços de Internet.
+
+CIDR - É uma mascara de redes
+172.31.0.0/16
+
+Os 16 primeiros bits identificam a rede
+Numero IP>
+00000000.00000000.00000000.00000000 (4 bloquinhos de 8 bits)

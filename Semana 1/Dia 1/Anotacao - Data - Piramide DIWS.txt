@@ -1,0 +1,26 @@
+Dados são registros, fatos brutos coletados que não possuem qualquer significado, contexto ou nexo com a realidade
+
+Então, quando os fatos são expostos sem nenhuma relação, no seu estado bruto, desvinculados da realidade, temos os chamados dados
+
+O conhecimento pode ser dividido em dois tipos, o tácito e o explícito.
+
+O conhecimento tácito é considerado como sendo aquele gerado através da experiência e não por meio de palavras escritas. Ele é adquirido através da prática, sendo ele empírico e de difícil transmissão.
+
+Já o conhecimento explícito é aquele codificado, formal, baseado na teoria e transmitido de forma sequencial e estruturada, geralmente por meio da escrita. Ele pode ser facilmente transmitido ou explicado. Um exemplo é a receita escrita pela cozinheira, onde há todos os procedimentos, descritos de maneira formal, para realizar o processo de preparação de uma lasanha. Desse modo, o conhecimento explícito é aquele que pode ser encontrado em livros, artigos, revistas, etc.
+
+
+Piramide:
+	Sabedoria
+       Conhecimento
+        Informação
+           Data
+
+Dados -> Data
+Informacao -> Information
+Conhecimento -> Knowledge
+Sabedoria: Wisdom
+
+
+A tecnologia semântica usa semântica formal para ajudar os sistemas de IA a entender a linguagem e processar informações da mesma forma que os humanos. Assim, eles são capazes de armazenar, gerenciar e recuperar informações com base no significado e nas relações lógicas. Várias empresas já estão usando tecnologia semântica e bancos de dados de gráficos semânticos, como o GraphDB da Ontotext, para gerenciar seu conteúdo, redirecionar e reutilizar informações, cortar custos e obter novos fluxos de receita.
+
+5w e 2h

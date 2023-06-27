@@ -1,0 +1,12 @@
+Você foi contratado para projetar e implementar um Data Lake na AWS para a
+Amazon.com. A empresa coleta grandes volumes de dados de várias fontes, como
+logs de servidores, registros de transações, interações de clientes, dados de
+redes sociais e dados sobre as vendas no e-commerce. Seu objetivo é criar um
+Data Lake altamente escalável e flexível que possibilite armazenar, processar e
+analisar os dados de e-commerce de forma eficiente, permitindo insights valiosos
+para impulsionar o negócio.
+
+Solução - SQS recebendo eventos de pagamentos na fila e enviando para
+Step-Functions com o fluxo de processamento dos dados no Lambda para tratar 
+imagens. Outro lambda focado em registros de transações, recebendo as mensagens
+do sqs. Todos estes dados devem ser salvos em S3  pode ser consultado no Athena.

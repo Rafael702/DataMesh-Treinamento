@@ -1,0 +1,70 @@
+Uma VPC Endpoint permite conectar sua VPC de maneira privada aos serviços da AWS
+e aos endpoits da VPC suportando pelo PrivateLink, sem a necessidade de um
+gateway da internet, dispositivos NAT, conexão VPN ou conexão do
+AWS Direct Connect.
+As instâncias na sua VPN não exigem endereços IP públicos para se comunicar com
+os recursos no serviço. O tráfego entre sua VPC e o outro serviço não sai da
+rede da Amazon.
+Os VPC's endpoit são dispositivos virtuais. Eles são componentes de VPC na
+escala horizontal, redundantes e altamente disponiveis, que permitem a
+comunicação entre instâncias na sua VPC e serviços sem impor riscos à
+disponibilidade ou restrições de largura de banda no tráfego da rede.
+
+Tipos de VPC endpoits
+Interface Endpoints (Interface de rede elastica com um IP privado que serve de
+ponto de entrada para o tráfego. Os seguintes serviços podem ser integrados:
+https://docs.aws.amazon.com/pt_br/vpc/latest/privatelink/aws-services-privatelink-support.html
+)
+
+Gateway Endpoints (Um endpoit de gateway é um gateway especificado como destino
+para uma rota, da tabela de rotas para tráfego destinado a um serviço
+compatível da AWS.
+Os seguintes serviços da AWS são compatíveis:
+Amazon S3
+DynamoDB
+)
+
+O amazon S3 sem um VPC Endpoint possui uma subnet publica e privada.
+Para acessar a bucket a S3 passa pela NAT Gateway e depois disso acessa a
+bucket pela internet.
+
+Com a VPC Endpoint a bucket não sai da rede privada da AWS.
+
+VPCs e redes VPC
+VCP é um data center privado virtual.
+Rede privada - é criar uma rede em uma rede publica e criptografada com IPSec ou
+um tunel VPN.
+Se não usar a VPC endpoit será necessário acessar as services da AWS através da
+internet.
+A internet pode ser um caminho mais lento para envio de dados
+
+Pra acessar a internet em uma rede privada é necessário passar pelo NAT Gateway que
+passara por um route e em seguida passara para o internet gateway.
+O NAT GATEWAY é uma instância sendo assim há custos..
+O problema disso é o preço:
+sa-east-1 (São Paulo)
+0,093 USD/h
+30 dias x 24h = 66,96 USD por mês
+
+Além disso pagamos pelo trafego de dados
+0,093 USD /GB
+
+Se no nosso problema entre o consumo e envio para o S3 trafegarmos 1TB por dia:
+66,96 + 1024*30dias*0,093 = 2.923,92 USD
+
+2.923,92 x 12 meses = 35.000 USD por ano
+
+A melhor solução é usar a VPC Endpoint. Temos dois tipos de VPC endpoit: Gateway
+e Interface.
+Com o Gateway VPC o custo é 0,0 (Gratuito)
+
+E se for necessário acessar o S3 e a internet ao mesmo tempo?
+Podemos utilizar o NAT GATEWAY ao mesmo tempo em que usa o VPC endpoit, basta
+configurar corretamente o Route Table da private subnet
+
+Só existe VPC endpoint para o S3?
+Não, S3 e DynamoDb (Gateway Endpoint) que são gratuitos, mas podemos configurar
+outros serviços como: SNS e SQS (Interface GATEWAY), porém tem custo por hora de
+0,021 USD e 0,01 USD/GB
+
+Endpoints da VPC de Interface (AWS PrivateLink)

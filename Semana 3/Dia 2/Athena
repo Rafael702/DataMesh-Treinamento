@@ -1,0 +1,36 @@
+Consulta e analise de dados
+conultas interativas - sql
+
+serverless
+
+Apache presto - Athena foi fewito em cima disso
+Analise de dados do csv
+
+O Athena se integra ao AWS Glue Data Catalog, que oferece armazenamento de
+metadados persistente para seus dados no Amazon S3. Isso permite criar tabelas
+e consultar dados no Athena com base em um armazenamento central de metadados
+disponível em sua conta da Amazon Web Services e integrado ao ETL e aos recursos
+de descoberta de dados do AWS Glue
+
+O Amazon Athena facilita a execução de consultas interativas com dados
+diretamente no Amazon S3, sem exigir a formatação de dados ou o gerenciamento da
+infraestrutura. Por exemplo, o Athena é útil quando você deseja executar uma
+consulta rápida em logs da Web para solucionar um problema de performance no seu
+site. Com o Athena, é possível começar rapidamente: basta definir uma tabela para
+os seus dados e começar a consultar usando SQL padrão.
+
+Um data warehouse como o Amazon Redshift é a melhor opção quando você precisa
+reunir dados de várias origens diferentes (como sistemas de inventário, sistemas
+financeiros e sistemas de vendas a varejo) em um formato comum e armazená-los por
+longos períodos de tempo.
+
+O mecanismo de consulta no Amazon Redshift foi otimizado para ter uma performace
+especialmente boa na execução de consultas complexas que unem várias tabelas de
+banco de dados muito grandes. Se você precisar executar consultas com dados a
+ltamente estruturados com muitas uniões em muitas tabelas muito grandes, escolha
+o Amazon Redshift.
+
+Custo por dados escaneados. $5 por Tera de dados escaneados
+metadados do Athena é integrado com o GLue.
+
+Workgroups -> pode segmentar o processo

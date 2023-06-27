@@ -1,0 +1,76 @@
+Precisa dos arn das lambdas:
+arn:aws:lambda:us-east-1:797844572213:function:ProcessPurchase
+arn:aws:lambda:us-east-1:797844572213:function:ProcessRefund
+
+Precisamos dos arn's para colocar no alvo
+AWSLambdaRole
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
+
+ASL -  Amazon States Language
+
+{
+  "Comment": "A Hello World example of the Amazon States Language using Pass states",
+  "StartAt": "Hello",
+  "States": {
+    "Hello": {
+      "Type": "Pass",
+      "Result": "Hello",
+      "Next": "World"
+    },
+    "World": {
+      "Type": "Pass",
+      "Result": "World",
+      "End": true
+    }
+  }
+}
+
+Hands On
+{
+  "Comment": "Transaction Processor State Machine",
+  "StartAt": "ProcessTransaction",
+  "States": {
+    "ProcessTransaction": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.TransactionType",
+          "StringEquals": "PURCHASE",
+          "Next": "ProcessPurchase"
+        },
+        {
+          "Variable": "$.TransactionType",
+          "StringEquals": "REFUND",
+          "Next": "ProcessRefund"
+        }
+      ]
+    },
+    "ProcessRefund": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:797844572213:function:ProcessRefund",
+      "End": true
+    },
+    "ProcessPurchase": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:797844572213:function:ProcessPurchase",
+      "End": true
+    }
+  }
+}
+
+
+Valor para startar step function
+ 

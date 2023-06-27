@@ -1,0 +1,34 @@
+O AWS Step Functions é um serviço de orquestração sem servidor que permite
+a integração com o AWS Lambdafunções e outros serviços da AWS para criar
+aplicativos essenciais aos negócios. Por meio do console gráfico do Step
+Functions, você vê o fluxo de trabalho do seu aplicativo como uma série de
+etapas orientadas a eventos.
+
+Preço por transição de estado
+
+Casos de uso
+O Step Functions gerencia os componentes e a lógica de seu aplicativo, para que
+você possa escrever menos código e se concentrar na criação e atualização de
+seu aplicativo rapidamente
+
+Você cria um fluxo de trabalho que executa um grupo de funções Lambda (etapas)
+em uma ordem específica. A saída de uma função do Lambda passa para a próxima
+entrada da função do Lambda. A última etapa do seu fluxo de trabalho fornece um
+resultado.
+
+Retry
+
+Nesse caso de uso, um cliente solicita um nome de usuário. Na primeira vez, a
+solicitação do cliente não foi bem-sucedida. Usando uma Retryinstrução, você
+pode fazer com que o Step Functions tente novamente a solicitação do cliente.
+Na segunda vez, a solicitação do seu cliente foi bem-sucedida.
+
+Pode ser usado como fluxo de trabalho
+orquestração para um aplicativo
+
+Linguagem ADSL - Linguagem semelhante ao JSON em que se é definido etapas encade-
+adas. Essas etapas pode conter tarefas que se comunicam com o serviço da aws.
+
+GUI - Interface Gráfica
+AWS Step Functions - É escalável e muito barato. São dois centavos e meio para
+cada 1.000 transições de estado.

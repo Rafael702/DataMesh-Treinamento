@@ -1,0 +1,93 @@
+https://www.totvs.com/blog/inovacoes/big-data/
+
+O que o big data possibilita?
+Possibilita observar o comportamento dos clientes.
+
+Um levantamento da Statista prevê que, até 2022, a receita gerada pelo uso de
+big data vai alcançar US$ 274 bilhões
+
+Como é considerado o valor dos dados neste século?
+O vice-presidente e analista da Gartner diz que os dados são considerados como:
+"o novo petroleo"
+
+>Porém, para que esses dados sejam coletados, armazenados e devidamente
+analisados, justamente para fornecer informações holísticas da realidade de
+uma área, é que surge a ideia de big data.
+
+>Diante deste cenário, podemos compreender o big data como uma tecnologia que
+faz alusão a um grande volume de dados e que possui variedade e velocidades,
+demandando por formas rentáveis e inovadoras de processar determinadas
+informações.
+
+Sendo assim, big datas seriam centros de processamento, extração e analise de
+dados.
+
+“Big data são ativos de informações de alto volume, alta velocidade e/ou alta
+variedade que exigem formas inovadoras e econômicas de processamento de
+informações que permitem uma visão aprimorada, tomada de decisões e automação
+de processos”.
+
+E nesses dados, incluímos tanto os estruturados quanto os não-estruturados.
+
+>Sendo assim, o big data serve para que a empresa aprimore suas estratégias de
+gestão.
+
+Comentario - Big datas tem como proposito melhorar o gerenciamento de dados
+em uma empresa
+
+Em geral, há algumas etapas a serem seguidas, como:
+
+definir uma estratégia de big data;
+identificar fontes de big data;
+acessar, gerenciar e armazenar os dados;
+analisar os dados;
+tomar decisões baseadas em dados.
+São tarefas que podem ser condensadas em três principais responsabilidades:
+integrar dados, gerenciá-los e então analisá-los.
+
+Os 5V's -> Volume, Variedade, Veracidade, Valor e Velocidade
+Inicialmente o Big Data começou com 3V's -> Volume, Velocidade e Variedade. Com
+o tempo, acabou ganhado outros dois importantes Vs.
+
+Diferença de dados -> estruturados e não estruturados. E as suas fontes de
+origem:
+Social Data: a origem são as pessoas, evidenciam características de seu
+comportamento.
+Enterprise Data: a origem são as empresas, evidenciam seus processos, nível de
+produtividade, entre outros detalhes.
+Data of Things: a origem são as informações coletadas em dispositivos IoT,
+sensores inteligentes e outros equipamentos do tipo.
+
+No entanto, a maior parte do armazenamento utilizado em Big Data costuma se
+enquadrar em um dos dois principais tipos: NAS e DAS.
+
+NAS: NAS é a sigla de Network Attached Storage (Armazenamento Ligado à Rede)
+o hardware em que o acesso é feito não é o mesmo daquele em que a informação
+está contida.
+
+DAS: Direct Attached Storage (Armazenamento Ligado Diretamente)
+Alguns exemplos de DAS em destaque são:
+SSDs;
+pendrives;
+Discos rígidos (HDs).
+
+O Big Data trata do volume de dados, sua organização e coleta.
+O Business Intelligence, por outro lado, cuida do processamento desses dados
+
+as 10 melhores ferramentas de big data que podem ser aplicadas nos mais
+diversos tipos de negócio. Veja!
+
+Pentaho: permite que informações de fontes diversas sejam integradas;
+Import.io: possibilita a extração de dados open source;
+Tableau: importante ferramenta que permite a visualização de dados,
+criação de tabelas, mapas e diversos gráficos;
+Apache Hadoop: faz com que arquivos possam ser diminuídos ou aumentados;
+Oracle Data Mining: responsável por realizar a separação (peneiração)
+dos dados considerados mais relevantes;
+Statwing: possibilita analisar as estatísticas;
+Chartio: faz com que relatórios sejam criados a partir dos dados que
+foram coletados;
+Watson Analytics: importante ferramenta que permite que insights dos dados
+sejam encontrados de forma adequada;
+Stratws One: promove uma melhor gestão de performance;
+MindMiners: possibilita a realização de buscas automatizadas.

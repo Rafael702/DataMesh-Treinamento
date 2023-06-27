@@ -1,0 +1,21 @@
+Em disco - Se altera o dado
+No objeto - Se altera um objeto de cada vez. Baixa o objeto e altera
+O S3 é um Storage de Objetos, pois colocamos e tiramos coisas de dentro dele.
+Extremamente Escalável.
+Altamente Durável - Garantia de que o objeto ñ será perdido
+Baixo custo  - $0,023 por GB
+Criptografia em repouso -
+Integra com a maioria dos serviços da AWS
+Usado - Videos,Fotos,pdf,txt,csv e etc..; logs; backups; Sites;
+Workflow(fluxo de uma execução);Filesystem; SFTP; Bigdata
+
+Não pagamos por buckets, apenas pelo GB.
+
+Lifecycle - ciclo de vida de um arquivo. Podemos determinar o prazo de
+existencia de um arquivo
+Podemos configurar a funcionalidade de um versionamento.
+Triger - funcionalidade disponivel no S3. Podemos chamar o Lambda para ajustar
+determinados arquivos.
+Glacier - Geleira - Arquivo de dificil acesso - Vart - Arquivos podem ser
+retornados de 6h00 a 7h00. Arquivos antigos que não são muito acessado, podem ser
+deixados no Glacier

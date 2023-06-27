@@ -1,0 +1,55 @@
+Data Warahouse - Armazém de dados
+Data Mart
+
+Data lake -> Visa a velocidade e a quantidade de dados que podem enviar -
+Poço de dados
+
+Técnica colunar de analisar os dados e não linear como no Warehouse
+
+Data Mesh
+Dominio de dados -  Flexibilidade do Data Mart
+
+Data Warehouse + Data Mart - Deprecado ()
+Data Lake - Empresas de médio e pequeno porte
+Data Mesh - Empresas Grandes - Agrupar temas - DaaS - Data As A Service -
+Distribuição federada e não tão centralizada.
+
+Como construir um Data Mesh:
+Começa construindo um data mesh - Agrupa temas em dominios que se conectam
+depois para criar uma malha de dados. Maior Flexibilidade e um governo de dados
+descentralizado.
+
+Lake House -> Usa estrutura do data lake + data Warehouse.
+Limita a capacidade do data lake
+
+De acordo com Yuhanna da Forrester, a principal diferença entre a malha de
+dados e a abordagem da malha de dados está em como as APIs são acessadas.
+
+“Uma malha de dados é basicamente uma [solução] orientada por API para
+desenvolvedores, ao contrário da malha [de dados]”, disse Yuhanna.
+“[Data Fabric] é o oposto da malha de dados, onde você está escrevendo o
+código para as APIs fazerem interface. Por outro lado, a malha de dados é de
+baixo código, sem código, o que significa que a integração da API está
+acontecendo dentro da malha sem realmente aproveitá-la diretamente, ao
+contrário da malha de dados.”
+
+A primeira geração : data warehouse corporativo proprietário e plataformas de
+inteligência de negócios; soluções com preços altos que deixaram as empresas
+com dívidas técnicas igualmente grandes; Dívida técnica em milhares de jobs
+ETL insustentáveis, tabelas e relatórios que apenas um pequeno grupo de pessoas
+especializadas entende, resultando em um impacto positivo subrealizado
+nos negócios.
+
+A segunda geração : ecossistema de big data com um data lake como bala de prata;
+ecossistema complexo de big data e trabalhos em lote de longa execução operados
+por uma equipe central de engenheiros de dados hiperespecializados criaram
+monstros de data lake que, na melhor das hipóteses, permitiram bolsões de
+análise de P&D; mais prometido e menos realizado.
+
+As plataformas de dados de terceira e atual geração são mais ou menos
+semelhantes à geração anterior, com um toque moderno para (a) streaming para
+disponibilidade de dados em tempo real com arquiteturas como Kappa ,
+(b) unificação do processamento em lote e fluxo para transformação de dados
+com estruturas como Apache Beam , bem como (c) serviços gerenciados baseados
+em nuvem para armazenamento, mecanismos de execução de pipeline de dados e
+plataformas de aprendizado de máquina.

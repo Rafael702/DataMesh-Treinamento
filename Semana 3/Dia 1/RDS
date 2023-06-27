@@ -1,0 +1,21 @@
+RDS - Relation Database Service
+
+Serviço de banco de dados em que a AWS gerencia
+
+Podemos escolher o banco de dados, GB e a versão. A aws só vai dosponibilizar o
+IP.
+
+MULTIAZ - Cria um "clone" do banco de dados em outra subnet e sincroniza.
+Quando for feita uma alteração em uma base da subnet 1 a alteração será refletida
+na base na subnet 2. Seria um Primario e o Secundário.
+Não é assincrono.
+
+Read-Replica - Aponta pra alguma base que recebe alterações, contudo o Read-Replica
+é uma base de leitura apenas. Pode estar em zona de disponibilidades diferentes e
+em regiões diferentes.
+
+Public Access- No (Nenhuma máquina fora da VPC vai conseguir acessa a base).
+Sim (Podemos acessar a base de qualquer lugar)
+
+RDS - É uma ótima opção em contrapartida a subir uma instancia EC2 com um banco
+de dados.

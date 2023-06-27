@@ -1,0 +1,17 @@
+Serviço que registra chamados de apis. Tudo o que acontece em uma conta da
+aws é registrado no CloudTrail
+
+CloudTrail Event - Registro de atividades na conta. Histórioco dos ultimos
+30 dias sem custo da service.
+Management event - Recursos operacional - Control Plane
+Data Events - Eventos feito dentro de um recurso. Como acesso de um objeto em um
+amazon S3 ou quando uma Lambda é executada.
+O CloudTrail só registra um Management event por padrão. O Usuario pode definir
+se o data events pode ser registrado.
+Trail - Definir configuração de  como o cloudTrail pode operar. Com uma Trail
+criada os eventos serão capturados.
+Integração com AWS Organizations - Ambiente de multiplas contas.
+
+Os registros são salvos em uma bucket do amazon S3. Só paga pelo armazenamento do
+S3. Os arquivos são armazenados em formato json. Pode habilitar no CloudWatch
+Logs.

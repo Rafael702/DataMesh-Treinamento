@@ -1,0 +1,25 @@
+Virtual Privace Compute
+
+Padrão - Pra cada região a aws cria uma rede isoladas e independentes
+Não Padrão - independente da rede (VPC) Padrão, novas redes podem ser criadas e
+configuradas conforme a necessidade do cliente em cada região.
+
+Subredes (subnetes)
+VPC cobre toda uma região e a subnet é uma ou mais  subredes criadas em cada Zona
+de Disponibilidade - AZ da região
+Subnets - podem ser configuradas para dar acesso publico ou privada a recursos
+da AWS
+
+Route Tables - Controla a tráfego que sai das Subnets.
+A rede vpc automaticamente possui acesso a Internet. Mas podemos configurar
+para que não tenha.
+
+Internet Gateway (IGW) - Permite que a rede VPC tenha acesso a internet
+
+NAT Gateway - Permite que subnets tenham acesso a internet.
+Network Access Control List (NACL) - Controla o acesso a subnets
+Security Groups - Controla o Acesso a instancia EC2 e RDS, agindo como um
+Firewall
+
+Inbound Roules - Regras sobre o que pode entrar
+Outbound Roules - Regras sobre o que pode sair

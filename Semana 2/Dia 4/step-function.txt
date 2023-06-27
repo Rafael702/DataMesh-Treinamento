@@ -1,0 +1,6 @@
+arn:aws:sqs:us-east-1:797844572213:SQSFromStepFunction
+
+{
+  "TransactionId": "abc",
+  "Type": "PURCHASE"
+}

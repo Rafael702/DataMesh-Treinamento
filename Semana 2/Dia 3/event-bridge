@@ -1,0 +1,28 @@
+Aws event Bridge
+
+Arquitetura de eventos:
+Producer - encaminha evento para um broker (onde recebe/gerencia eventos,
+criar microfilas) -pode fazer o trigger de uma coisa ou ser consumida.
+
+Através das SDK da aws pode ser feita integração com o broker para gerenciar os
+brokers.
+Se paga pelo que usa.
+Ao invés de usar um Kafka podemos usar um event Bridge
+Onde podemos configurar a aplicação para mandar todos os eventos para o broker.
+
+CloudWatch Ruler -> é a aws mandando eventos para o CloudWatch. E no CloudWatch
+configuramos uma role para chamar um consumidor. É a mesma coisa que o
+Event Bridge.
+
+SOA - Serviço Orientado a Arquitetura
+
+O Amazon Event Bridge é um barramento de eventos sem servidor que torna mais
+fácil a criação de aplicações orientadas por eventos em escala usando eventos
+gerados com base em suas aplicações, aplicações integradas de software como
+serviço (SaaS) e serviços da AWS
+
+Lambda Pimball - anti-pattern serveless destacado pela ThoughtWorks.
+Dificuldade em identificar as fronteiras. O Event Bridge ajuda a evitar a
+dependencia ciclica e auxilia na criação de um sistema mais desacoplado
+
+event pattern - Padrão de busca de eventos
